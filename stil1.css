@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 500px) {
+    .outer{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 0.5fr 3fr 3fr 0.8fr;
+        grid-template-areas: 
+       /* "i1 i2 i3 i3"
+        "i1 i4 i5 i6"
+        "i7 i8 i5 i9"
+        "i10 i8 i11 i11";*/
+        "i1"
+        "i2"
+        "i3"
+        "i4";
+       /* background-color: blueviolet;*/
+    
+    }
+    .inner{
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .outer{
+        display: grid;
+        height: 100vh;
+       /* background-color: blueviolet;*/
+        grid-template-rows: 4fr 3fr 3fr 0.8fr;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+      /*  "i1 i2"
+        "i1 i4"
+        "i3 i3"
+        "i5 i6"
+        "i5 i9"
+        "i7 i8"
+        "i10 i8"
+        "i11 i11";*/
+        "i2 i2"
+        "i1 i3"
+        "i1 i3"
+        "i4 i4";
+
+
+        
+        /* grid-template-areas: 
+        "i1 i2 i3 i3"
+        "i1 i4 i5 i6"
+        "i7 i8 i5 i9"
+        "i10 i8 i11 i11"; */
+    }
+
+    .inner{
+        margin: 4px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .outer{
+        margin: 0 auto;
+        width: 1440px;
+    }
+}
+
+
+.inner{
+    
+    background-color: rgb(230, 230, 234);
+  /*  color: blueviolet;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media screen and (min-width:500px) {
+    ul {
+       /* display: block;*/
+
+       display: flex;
+      /*  background-color: darkgray;*/
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    ul{
+        display: block;
+
+    }
+}
+
+li {
+   /* flex:1;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    list-style-type: none;*/
+    margin-top:3px;
+    margin-bottom:3px;
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 14pt; /* Размер шрифта в пунктах */ 
+
+ /*  background-color: darkgray;*/
+   /* border: 1px solid whitesmoke;*/
+}
+a {
+    color:#0b0101;
+    text-decoration:none
+    }
+    /*
+    .links>div{
+        margin: 3px;
+    }
+    .footer {
+        width: 90%;
+        margin: 0 auto;
+    }*/
